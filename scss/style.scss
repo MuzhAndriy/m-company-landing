@@ -1,15 +1,92 @@
 @import 'normalize';
-html{
+
+html {
     font-size: 10px;
 }
-body{
+
+body {
     font-size: 1.4rem;
     font-family: 'Open Sans', sans-serif;
-    // font-weight: 400;
 }
-.wrap{
+
+a {
+    text-decoration: none;
+}
+
+.overlay {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.wrap {
     max-width: 1190px;
     margin: 0 auto;
 }
 
+.bold {
+    font-weight: 700;
+}
 
+/*
+    MODULS
+*/
+
+.header {
+    background: #0a0a0a;
+
+    &__upperline {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin: 5.7rem 0 22rem;
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: white;
+        line-height: 2.4rem;
+        cursor: pointer;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 0 0 41.5rem;
+        & h1 {
+            font-size: 4.4rem;
+            font-weight: 300;
+            color: #999999;
+            margin: 0 0 2rem;
+
+            & strong {
+                font-weight: 700;
+                color: #fcac45;
+            }
+        }
+
+        & p {
+            font-size: 2rem;
+            color: #999999;
+
+        }
+    }
+}
+
+.nav {
+    margin: 6rem 0 22.5rem;
+
+    &__item {
+        font-weight: 700;
+        color: white;
+        margin: 0 1.7rem;
+        padding: 0 0 1.2rem;
+        border-bottom: 3px solid #0a0a0a;
+
+        &:hover {
+            border-bottom: 3px solid #fcac45;
+        }
+    }
+    &__dropdown-menu{
+        display: none;
+    }
+}
