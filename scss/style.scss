@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-size: 1.4rem;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,8 +19,9 @@ a {
 }
 
 .wrap {
-    max-width: 1190px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 .5rem;
 }
 
 .bold {
@@ -33,25 +34,16 @@ a {
 
 .header {
     background: #0a0a0a;
+    padding: 0 0 40rem;
 
     &__upperline {
         display: flex;
         justify-content: space-between;
     }
 
-    &__logo {
-        display: inline-block;
-        margin: 5.7rem 0 22rem;
-        font-size: 2.4rem;
-        font-weight: 800;
-        color: white;
-        line-height: 2.4rem;
-        cursor: pointer;
-    }
-
     &__title {
         text-align: center;
-        margin: 0 0 41.5rem;
+
         & h1 {
             font-size: 4.4rem;
             font-weight: 300;
@@ -66,19 +58,41 @@ a {
 
         & p {
             font-size: 2rem;
-            color: #999999;
+            color: #c2c0c0;
 
         }
     }
 }
 
+.logo {
+    margin: 5rem 0 22rem;
+    cursor: pointer;
+
+    &__img {
+        background: #c2c0c0;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: white;
+        line-height: 2.4rem;
+        position: relative;
+        top: -50px;
+        padding: 1rem;
+    }
+}
+
 .nav {
-    margin: 6rem 0 22.5rem;
+    margin: 9.6rem 0 22.5rem;
 
     &__item {
         font-weight: 700;
         color: white;
-        margin: 0 1.7rem;
+        margin: 0 0 0 3.5rem;
         padding: 0 0 1.2rem;
         border-bottom: 3px solid #0a0a0a;
 
@@ -86,7 +100,89 @@ a {
             border-bottom: 3px solid #fcac45;
         }
     }
-    &__dropdown-menu{
+
+    &__dropdown-menu {
         display: none;
     }
+}
+
+//    ABOUT
+
+.about {
+    &__wrap {
+        padding: 10rem 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__text {
+        & h2 {
+            font-size: 3.4rem;
+            color: #222222;
+            font-weight: 400;
+            text-align: center;
+            display: inline-block;
+            border-bottom: 4px solid #fcac45;
+            text-transform: uppercase;
+            letter-spacing: -0.68px;
+            padding: 3rem 0 2rem;
+            margin: 0;
+        }
+
+        & p {
+            font-size: 1.8rem;
+            color: #6c6c6c;
+            margin: 31px 0 45px;
+        }
+
+        & ul {
+            padding: 0;
+            list-style-image: url('../img/li.png');
+
+            & li {
+                font-style: italic;
+                font-size: 16px;
+                margin: 0 0 15px 25px;
+
+                & span {
+                    font-style: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// OUR TEAM
+
+.our-team {
+    color: white;
+    text-align: center;
+    background: #070707;
+    padding: 9.5rem 0 16rem;
+
+    &__title {
+        font-size: 4.4rem;
+    }
+
+    &__cont {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.employee {
+    &__foto {
+        border-radius: 50%;
+    }
+
+    &__name {}
+
+    &__post {}
+
+    &__desciption {}
 }
