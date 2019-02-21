@@ -28,6 +28,13 @@ a {
     font-weight: 700;
 }
 
+.underline {
+    height: 4px;
+    width: 100px;
+    background: #fcac45;
+    margin: 0 auto;
+}
+
 /*
     MODULS
 */
@@ -162,27 +169,93 @@ a {
 .our-team {
     color: white;
     text-align: center;
-    background: #070707;
-    padding: 9.5rem 0 16rem;
+    background: #111111;
+    padding: 10rem 0 15rem;
 
     &__title {
         font-size: 4.4rem;
-    }
-
-    &__cont {
-        display: flex;
-        flex-direction: row;
+        margin: 0 0 3rem;
     }
 }
 
 .employee {
+    margin: 10.5rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__content {
+        width: 250px;
+    }
+
     &__foto {
         border-radius: 50%;
     }
 
-    &__name {}
+    &__name {
+        margin: 2.2rem 0 1rem;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
 
-    &__post {}
-
-    &__desciption {}
+    &__post {
+        margin: 0 0 3.5rem;
+        font-size: 16px;
+    }
 }
+
+//  OUR SERVICES
+
+.our-services {
+    text-align: center;
+    padding: 10rem 0;
+    &__title {
+        font-size: 4.4rem;
+        color: #222222;
+        margin: 0 0 3rem;
+    }
+    &__text {
+        color: #6c6c6c;
+        font-size: 16px;
+        font-style: italic;
+        margin: 5.5rem 3.5rem 10.5rem;
+    }
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    &__content {
+        width: 245px;
+    }
+
+    &__img {
+    
+    }
+
+    &__subject {
+        margin: 0 0 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    & p{
+        margin: 0;
+        color: #222222;
+        line-height: 21px;
+    }
+}
+
+// OUR CLIENTS
+
+.our-clients {
+    background: #050505;
+    padding: 7rem 0;
+    color: white;
+    text-align: center;
+    &__title{
+        margin: 3rem 0;
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+}
+
+
