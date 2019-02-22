@@ -354,6 +354,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 4.4rem;
+}
+
 .overlay {
   max-width: 1500px;
   margin: 0 auto;
@@ -463,13 +467,15 @@ a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about__img {
   max-width: 100%;
 }
 
-.about__text h2 {
+.about__text h3 {
   font-size: 3.4rem;
   color: #222222;
   font-weight: 400;
@@ -504,33 +510,34 @@ a {
   font-size: 18px;
 }
 
-.our-team {
+.team {
   color: white;
   text-align: center;
   background: #111111;
-  padding: 10rem 0 15rem;
+  padding: 1rem 0 1rem;
 }
 
-.our-team__title {
-  font-size: 4.4rem;
-  margin: 0 0 3rem;
+.team__title {
+  margin: 9rem 0 3rem;
 }
 
 .employee {
-  margin: 10.5rem 0 0;
+  margin: 8.5rem 0 14rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .employee__content {
-  width: 250px;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  margin: 20px;
 }
 
 .employee__foto {
@@ -548,18 +555,17 @@ a {
   font-size: 16px;
 }
 
-.our-services {
+.services {
   text-align: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
 }
 
-.our-services__title {
-  font-size: 4.4rem;
+.services__title {
   color: #222222;
   margin: 0 0 3rem;
 }
 
-.our-services__text {
+.services__text {
   color: #6c6c6c;
   font-size: 16px;
   font-style: italic;
@@ -573,10 +579,19 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 3rem;
 }
 
 .services__content {
-  width: 245px;
+  margin: 3rem 0 0;
+  -ms-flex-preferred-size: 245px;
+      flex-basis: 245px;
+}
+
+.services__img {
+  margin: 0 0 28px;
 }
 
 .services__subject {
@@ -585,21 +600,132 @@ a {
   font-weight: 700;
 }
 
-.services p {
+.services__text {
   margin: 0;
   color: #222222;
   line-height: 21px;
 }
 
-.our-clients {
+.clients {
+  padding: 5rem 0;
   background: #050505;
-  padding: 7rem 0;
   color: white;
   text-align: center;
 }
 
-.our-clients__title {
-  margin: 3rem 0;
-  font-size: 4.4rem;
+.clients__title {
+  margin: 5rem 0 3rem;
   font-weight: 300;
+}
+
+.clients__brands {
+  padding: 2rem;
+  margin: 11rem 0 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients__logo {
+  margin: 20px;
+}
+
+.work {
+  text-align: center;
+}
+
+.work_title {
+  margin: 10rem 0 3rem;
+  line-height: 24px;
+  color: #222222;
+  font-weight: 300;
+}
+
+.work__text {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-style: italic;
+  display: inline-block;
+  margin: 5.6rem 0 17rem;
+}
+
+.work__conteiner {
+  margin: 0 auto 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  padding: 0 12px;
+}
+
+.work__img {
+  margin: 15px;
+}
+
+.testimonials {
+  text-align: center;
+  background: #050505;
+  padding: 5rem 0;
+  color: white;
+}
+
+.testimonials__title {
+  margin: 5rem 0 3rem;
+  line-height: 24px;
+}
+
+.testimonials__text {
+  margin: 10.8rem 0 5rem;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.testimonials__author {
+  font-size: 18px;
+  font-weight: 300px;
+  margin: 0 0 12rem;
+}
+
+.contacts {
+  text-align: center;
+  padding: 5rem;
+  text-align: center;
+}
+
+.contacts__wrap {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  margin: 5rem 0 3rem;
+  color: #222222;
+}
+
+.contacts__text {
+  margin: 5.6rem 0 9.5rem;
+  color: #6c6c6c;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.form {
+  margin: 0 0 19.5rem;
+}
+
+.footer {
+  background: #222222;
+  height: 92px;
 }

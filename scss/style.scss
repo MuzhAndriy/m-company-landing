@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 4.4rem;
+}
+
 .overlay {
     max-width: 1500px;
     margin: 0 auto;
@@ -120,6 +124,7 @@ a {
         padding: 10rem 0;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     &__img {
@@ -127,7 +132,7 @@ a {
     }
 
     &__text {
-        & h2 {
+        & h3 {
             font-size: 3.4rem;
             color: #222222;
             font-weight: 400;
@@ -166,26 +171,26 @@ a {
 
 // OUR TEAM
 
-.our-team {
+.team {
     color: white;
     text-align: center;
     background: #111111;
-    padding: 10rem 0 15rem;
+    padding: 1rem 0 1rem;
 
     &__title {
-        font-size: 4.4rem;
-        margin: 0 0 3rem;
+        margin: 9rem 0 3rem;
     }
 }
 
 .employee {
-    margin: 10.5rem 0 0;
+    margin: 8.5rem 0 14rem;
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap row;
     justify-content: space-around;
 
     &__content {
-        width: 250px;
+        flex-basis: 250px;
+        margin: 20px;
     }
 
     &__foto {
@@ -206,14 +211,15 @@ a {
 
 //  OUR SERVICES
 
-.our-services {
+.services {
     text-align: center;
-    padding: 10rem 0;
+    padding: 7rem 0;
+
     &__title {
-        font-size: 4.4rem;
         color: #222222;
         margin: 0 0 3rem;
     }
+
     &__text {
         color: #6c6c6c;
         font-size: 16px;
@@ -221,15 +227,20 @@ a {
         margin: 5.5rem 3.5rem 10.5rem;
     }
 }
+
 .services {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 3rem;
+
     &__content {
-        width: 245px;
+        margin: 3rem 0 0;
+        flex-basis: 245px;
     }
 
     &__img {
-    
+        margin: 0 0 28px;
     }
 
     &__subject {
@@ -237,7 +248,8 @@ a {
         font-size: 2.5rem;
         font-weight: 700;
     }
-    & p{
+
+    &__text {
         margin: 0;
         color: #222222;
         line-height: 21px;
@@ -246,16 +258,119 @@ a {
 
 // OUR CLIENTS
 
-.our-clients {
+.clients {
+    padding: 5rem 0;
     background: #050505;
-    padding: 7rem 0;
     color: white;
     text-align: center;
-    &__title{
-        margin: 3rem 0;
-        font-size: 4.4rem;
+
+    &__title {
+        margin: 5rem 0 3rem;
         font-weight: 300;
+    }
+
+    &__brands {
+        padding: 2rem;
+        margin: 11rem 0 11rem;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 20px;
     }
 }
 
+// OUR WORK
 
+.work {
+    text-align: center;
+
+    &_title {
+        margin: 10rem 0 3rem;
+        line-height: 24px;
+        color: #222222;
+        font-weight: 300;
+    }
+
+    &__text {
+        color: #6c6c6c;
+        font-size: 16px;
+        font-style: italic;
+        display: inline-block;
+        margin: 5.6rem 0 17rem;
+    }
+
+    &__conteiner {
+        margin: 0 auto 10rem;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap row;
+        padding: 0 12px;
+    }
+
+    &__img {
+        margin: 15px;
+    }
+}
+
+// OUR CLIENTS' TESTIMONIALS
+
+.testimonials {
+    text-align: center;
+    background: #050505;
+    padding: 5rem 0;
+    color: white;
+    &__title {
+        margin: 5rem 0 3rem;
+        line-height: 24px;
+    }
+
+    &__text {
+        margin: 10.8rem 0 5rem;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__author {
+        font-size: 18px;
+        font-weight: 300px;
+        margin: 0 0 12rem;
+    }
+}
+
+// CONTACTS
+
+.contacts {
+    text-align: center;
+    padding: 5rem;
+    text-align: center;
+    &__wrap{
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin: 5rem 0 3rem;
+        color: #222222;
+    }
+
+    &__text {
+        margin: 5.6rem 0 9.5rem;
+        color: #6c6c6c;
+        font-style: italic;
+        font-size: 14px;
+    }
+}
+.form{
+    margin: 0 0 19.5rem;
+}
+// FOOTER
+
+.footer{
+    background: #222222;
+    height: 92px;
+}
+
+.socials{
+}
