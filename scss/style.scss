@@ -34,22 +34,40 @@ h2 {
     margin: 0 auto;
 }
 
+.upbtn {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    border: 2px solid gray;
+    padding: 6px 6px 4px;
+    background: white;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+
+    &:hover {
+        background: #c2c0c0;
+    }
+}
+
 /*
     MODULS
 */
 
 .header {
     background: #0a0a0a;
-    padding: 0 0 15rem;
+    padding: 4rem 0 10rem;
 
     &__upperline {
         display: flex;
         justify-content: space-between;
+        padding: 0 0 2rem;
     }
 
     &__title {
         text-align: center;
-        margin: 0 0 20rem ;
+        margin: 10rem 0 15rem;
+
         & h1 {
             font-size: 4.4rem;
             font-weight: 300;
@@ -71,7 +89,6 @@ h2 {
 }
 
 .logo {
-    margin: 5rem 0 22rem;
     cursor: pointer;
 
     &__img {
@@ -93,30 +110,36 @@ h2 {
 }
 
 .nav {
-    margin: 9.6rem 0 22.5rem;
-
+    margin: 4.7rem 0 22rem;
     &__item {
+        margin: 5px 9px 0 0;
         font-weight: 700;
         color: white;
-        margin: 0 0 0 3.5rem;
-        padding: 0 0 1.2rem;
+        padding: 0 0 15px;
         border-bottom: 3px solid #0a0a0a;
-
         &:hover {
             border-bottom: 3px solid #fcac45;
         }
     }
-
-    &__dropdown-menu {
+    &__mobile{
         display: none;
+        text-align: center;
+        padding: 0 0 5px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
     }
+        // &#9776;
+    
+
 }
 
 //    ABOUT
 
 .about {
     &__wrap {
-        padding: 10rem 0;
+        padding: 6rem 0;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -124,9 +147,13 @@ h2 {
 
     &__img {
         max-width: 100%;
+        margin: 3rem 0 0;
     }
 
     &__text {
+        margin: 3rem 0 0;
+        padding: 15px;
+
         & h3 {
             font-size: 3.4rem;
             color: #222222;
@@ -136,7 +163,7 @@ h2 {
             border-bottom: 4px solid #fcac45;
             text-transform: uppercase;
             letter-spacing: -0.68px;
-            padding: 3rem 0 2rem;
+            padding: 3rem 10px 2rem;
             margin: 0;
         }
 
@@ -209,6 +236,7 @@ h2 {
 .services {
     text-align: center;
     padding: 1rem 0;
+
     &__title {
         color: #222222;
         margin: 5rem 0 3rem;
@@ -283,7 +311,6 @@ h2 {
 
     &_title {
         margin: 10rem 0 3rem;
-        line-height: 24px;
         color: #222222;
         font-weight: 300;
     }
@@ -293,7 +320,7 @@ h2 {
         font-size: 16px;
         font-style: italic;
         display: inline-block;
-        margin: 5.6rem 0 14rem;
+        margin: 5.6rem 0 10rem;
     }
 
     &__conteiner {
@@ -316,6 +343,7 @@ h2 {
     background: #050505;
     padding: 5rem 0;
     color: white;
+
     &__title {
         margin: 5rem 0 3rem;
         font-weight: 300;
@@ -339,10 +367,12 @@ h2 {
 .contacts {
     text-align: center;
     padding: 5rem 0 1rem;
-    &__wrap{
+
+    &__wrap {
         max-width: 750px;
         margin: 0 auto;
     }
+
     &__title {
         margin: 5rem 0 3rem;
         color: #222222;
@@ -355,31 +385,38 @@ h2 {
         font-size: 14px;
     }
 }
-.form{
+
+.form {
     text-align: left;
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-    margin: 0 0 19.5rem;
-    position: relative;
+    margin: 0 0 15rem;
+    padding: 0 10px;
+    overflow: hidden;
+
     & lable {
         color: #636363;
         font-size: 14px;
-        &::after{
+
+        &::after {
             content: '∗';
             color: red;
             vertical-align: super;
-            
+
         }
     }
-    &__textarea{
+
+    &__textarea {
+        display: block;
         box-sizing: border-box;
-        margin: 10px 0 30px;
-        width: 750px;
-        height: 16rem;
+        margin: 0 0 20px;
+        width: 100%;
+        height: 15rem;
         padding: 10px;
     }
-    &__btn{
+
+    &__btn {
         width: 165px;
         height: 40px;
         padding: 0;
@@ -387,30 +424,90 @@ h2 {
         background: #fcac45;
         color: white;
         border: 0;
-        right: 0;
-        position: absolute;
         cursor: pointer;
+        align-self: flex-end;
     }
- }
-#uname, #email{
-        margin: 10px 0;
-        width: 340px;
-        height: 40px;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        padding: 0 10px;
-    }
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#uname,
+#email {
+    margin: 10px 0;
+    width: 340px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0 10px;
+}
 
 // FOOTER
 
-.footer{
+.footer {
     background: #222222;
 }
 
-.socials{
+.socials {
     width: 225px;
     margin: 0 auto;
     padding: 30px 0;
-    &__item{
+
+    &__item {
         padding: 0 5px;
+    }
+}
+
+
+
+//  MEDIA
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 9px;
+    }
+
+    .header__upperline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 7px;
+    }
+    .nav {
+        position: relative;
+        width: 94%;
+        &__mobile{
+            display: block;
+            color: white;
+        }
+        &__menu {
+            position: absolute;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            &_active{
+                display: flex;
+            }
+        }
+        
+    }
+
+    #uname,
+    #email {
+        width: 300px;
+        box-sizing: border-box;
     }
 }
