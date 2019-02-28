@@ -1,0 +1,510 @@
+@import 'normalize';
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 4.4rem;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    height: 4px;
+    width: 100px;
+    background: #fcac45;
+    margin: 0 auto;
+}
+
+.upbtn {
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    border: 2px solid gray;
+    padding: 6px 6px 4px;
+    background: white;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+
+    &:hover {
+        background: #c2c0c0;
+    }
+}
+
+/*
+    MODULS
+*/
+
+.header {
+    background: #0a0a0a;
+    padding: 4rem 0 10rem;
+
+    &__upperline {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 2rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 10rem 0 15rem;
+
+        & h1 {
+            font-size: 4.4rem;
+            font-weight: 300;
+            color: #999999;
+            margin: 0 0 2rem;
+
+            & strong {
+                font-weight: 700;
+                color: #fcac45;
+            }
+        }
+
+        & p {
+            font-size: 2rem;
+            color: #c2c0c0;
+
+        }
+    }
+}
+
+.logo {
+    cursor: pointer;
+
+    &__img {
+        background: #c2c0c0;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    &__name {
+        display: inline-block;
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: white;
+        line-height: 2.4rem;
+        position: relative;
+        top: -50px;
+        padding: 1rem;
+    }
+}
+
+.nav {
+    margin: 4.7rem 0 22rem;
+    &__item {
+        margin: 5px 9px 0 0;
+        font-weight: 700;
+        color: white;
+        padding: 0 0 15px;
+        border-bottom: 3px solid #0a0a0a;
+        &:hover {
+            border-bottom: 3px solid #fcac45;
+        }
+    }
+    &__mobile{
+        display: none;
+        text-align: center;
+        padding: 0 0 5px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+    }
+        // &#9776;
+    
+
+}
+
+//    ABOUT
+
+.about {
+    &__wrap {
+        padding: 6rem 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        max-width: 100%;
+        margin: 3rem 0 0;
+    }
+
+    &__text {
+        margin: 3rem 0 0;
+        padding: 15px;
+
+        & h3 {
+            font-size: 3.4rem;
+            color: #222222;
+            font-weight: 400;
+            text-align: center;
+            display: inline-block;
+            border-bottom: 4px solid #fcac45;
+            text-transform: uppercase;
+            letter-spacing: -0.68px;
+            padding: 3rem 10px 2rem;
+            margin: 0;
+        }
+
+        & p {
+            font-size: 1.8rem;
+            color: #6c6c6c;
+            margin: 31px 0 45px;
+        }
+
+        & ul {
+            padding: 0;
+            & li {
+                font-style: italic;
+                font-size: 16px;
+                margin: 0 0 15px 25px;
+
+                & span {
+                    font-style: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// OUR TEAM
+
+.team {
+    color: white;
+    text-align: center;
+    background: #111111;
+    padding: 1rem 0 1rem;
+
+    &__title {
+        margin: 9rem 0 3rem;
+    }
+}
+
+.employee {
+    margin: 8.5rem 0 14rem;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+
+    &__content {
+        flex-basis: 250px;
+        margin: 20px;
+    }
+
+    &__foto {
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin: 2.2rem 0 1rem;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+
+    &__post {
+        margin: 0 0 3.5rem;
+        font-size: 16px;
+    }
+}
+
+//  OUR SERVICES
+
+.services {
+    text-align: center;
+    padding: 1rem 0;
+
+    &__title {
+        color: #222222;
+        margin: 5rem 0 3rem;
+    }
+
+    &__text {
+        color: #6c6c6c;
+        font-size: 16px;
+        font-style: italic;
+        margin: 5.5rem 3.5rem 10.5rem;
+    }
+}
+
+.service {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 7rem;
+
+    &__content {
+        margin: 3rem 0 0;
+        flex-basis: 245px;
+    }
+
+    &__img {
+        margin: 0 0 28px;
+    }
+
+    &__subject {
+        margin: 0 0 2rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin: 0;
+        color: #222222;
+        line-height: 21px;
+    }
+}
+
+// OUR CLIENTS
+
+.clients {
+    padding: 5rem 0;
+    background: #050505;
+    color: white;
+    text-align: center;
+
+    &__title {
+        margin: 5rem 0 3rem;
+        font-weight: 300;
+    }
+
+    &__brands {
+        padding: 2rem;
+        margin: 11rem 0 11rem;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 20px;
+    }
+}
+
+// OUR WORK
+
+.work {
+    text-align: center;
+
+    &_title {
+        margin: 10rem 0 3rem;
+        color: #222222;
+        font-weight: 300;
+    }
+
+    &__text {
+        color: #6c6c6c;
+        font-size: 16px;
+        font-style: italic;
+        display: inline-block;
+        margin: 5.6rem 0 10rem;
+    }
+
+    &__conteiner {
+        margin: 0 auto 10rem;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap row;
+        padding: 0 12px;
+    }
+
+    &__img {
+        margin: 15px;
+    }
+}
+
+// OUR CLIENTS' TESTIMONIALS
+
+.testimonials {
+    text-align: center;
+    background: #050505;
+    padding: 5rem 0;
+    color: white;
+
+    &__title {
+        margin: 5rem 0 3rem;
+        font-weight: 300;
+    }
+
+    &__text {
+        margin: 10.8rem 0 5rem;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__author {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0 0 12rem;
+    }
+}
+
+// CONTACTS
+
+.contacts {
+    text-align: center;
+    padding: 5rem 0 1rem;
+
+    &__wrap {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 5rem 0 3rem;
+        color: #222222;
+    }
+
+    &__text {
+        margin: 5.6rem 0 9.5rem;
+        color: #6c6c6c;
+        font-style: italic;
+        font-size: 14px;
+    }
+}
+
+.form {
+    text-align: left;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin: 0 0 15rem;
+    padding: 0 10px;
+    overflow: hidden;
+
+    & lable {
+        color: #636363;
+        font-size: 14px;
+
+        &::after {
+            content: '∗';
+            color: red;
+            vertical-align: super;
+
+        }
+    }
+
+    &__textarea {
+        display: block;
+        box-sizing: border-box;
+        margin: 0 0 20px;
+        width: 100%;
+        height: 15rem;
+        padding: 10px;
+    }
+
+    &__btn {
+        width: 165px;
+        height: 40px;
+        padding: 0;
+        margin: 0;
+        background: #fcac45;
+        color: white;
+        border: 0;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#uname,
+#email {
+    margin: 10px 0;
+    width: 340px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 0 10px;
+}
+
+// FOOTER
+
+.footer {
+    background: #222222;
+}
+
+.socials {
+    width: 225px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    &__item {
+        padding: 0 5px;
+    }
+}
+
+
+
+//  MEDIA
+
+@media screen and (max-width:992px) {
+    html {
+        font-size: 9px;
+    }
+
+    .header__upperline {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 7px;
+    }
+    .nav {
+        position: relative;
+        width: 94%;
+        &__mobile{
+            display: block;
+            color: white;
+        }
+        &__menu {
+            position: absolute;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            &_active{
+                display: flex;
+            }
+        }
+        
+    }
+
+    #uname,
+    #email {
+        width: 300px;
+        box-sizing: border-box;
+    }
+}
