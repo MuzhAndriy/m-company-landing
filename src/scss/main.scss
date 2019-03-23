@@ -94,6 +94,8 @@ h2 {
         background: #c2c0c0;
         border-radius: 50%;
         padding: 1rem;
+        height: 60px;
+        width: 60px;
     }
 
     &__name {
@@ -103,7 +105,7 @@ h2 {
         color: white;
         line-height: 2.4rem;
         position: relative;
-        top: -50px;
+        top: -20px;
         padding: 1rem;
     }
 }
@@ -363,7 +365,7 @@ h2 {
 
 .contacts {
     text-align: center;
-    padding: 5rem 0 1rem;
+    padding: 5rem 0 0;
 
     &__wrap {
         max-width: 750px;
